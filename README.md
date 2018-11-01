@@ -9,4 +9,4 @@ Cloud storage options supported by this fork :
 * [Google Cloud Storage](https://github.com/jruillier/CloudStorageMaven/tree/master/GoogleStorageWagon)
 
 The goal of this fork is to support the use of google-storage-wagon in ${maven.projectBasedir}/.mvn/extensions.xml.
-(required for downloading a "parent" stored on a GS bucket) 
+(required for downloading a "parent" artifact stored on a GS bucket) 

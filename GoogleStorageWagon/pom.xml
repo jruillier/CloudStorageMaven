@@ -8,7 +8,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>google-storage-noshade-wagon</artifactId>
-    <description>Google Cloud storage wagon without shading. Supports usage in .mvn/extensions.xml. Required for projects with a "parent".</description>
+    <description>Google Cloud storage wagon without shading. Supports usage in .mvn/extensions.xml. Required for projects with a "parent" artifact.</description>
 
     <properties>
         <gcs.version>1.20.0</gcs.version>

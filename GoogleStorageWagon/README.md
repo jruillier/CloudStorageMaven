@@ -2,7 +2,7 @@
 
 The GoogleStorageWagon project enables you to download/upload your artifacts to a google cloud storage bucket.
 
-Downloading the "parent" project is also supported. 
+Downloading the "parent" artifact is also supported. 
 
 ${maven.projectBasedir}/.mvn/extensions.xml :
 ```
