@@ -1,17 +1,20 @@
 # GoogleStorageWagon
 
-The GoogleStorageWagon project enables you to upload your artifacts to a google cloud storage bucket. 
+The GoogleStorageWagon project enables you to download/upload your artifacts to a google cloud storage bucket.
 
+Downloading the "parent" project is also supported. 
+
+${maven.projectBasedir}/.mvn/extensions.xml :
 ```
-<build>
-    <extensions>
-        <extension>
-            <groupId>com.gkatzioura.maven.cloud</groupId>
-            <artifactId>google-storage-wagon</artifactId>
-            <version>1.2</version>
-        </extension>
-    </extensions>
-</build>
+<extensions xmlns="http://maven.apache.org/EXTENSIONS/1.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/EXTENSIONS/1.0.0 http://maven.apache.org/xsd/core-extensions-1.0.0.xsd">
+    <extension>
+        <groupId>com.gkatzioura.maven.cloud</groupId>
+        <artifactId>google-storage-wagon</artifactId>
+        <version>1.5</version>
+    </extension>
+</extensions>
 ```
+
 
 Full guide on https://egkatzioura.com/2018/04/09/host-your-maven-artifacts-using-google-cloud-storage/
