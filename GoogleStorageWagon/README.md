@@ -2,7 +2,9 @@
 
 The GoogleStorageWagon project enables you to download/upload your artifacts to a google cloud storage bucket.
 
-Downloading the "parent" artifact is also supported. 
+Downloading the "parent" artifact is supported.
+
+Java 7 is supported. 
 
 ${maven.projectBasedir}/.mvn/extensions.xml :
 ```
@@ -11,7 +13,7 @@ ${maven.projectBasedir}/.mvn/extensions.xml :
     <extension>
         <groupId>eu.aronnax.maven.cloud</groupId>
         <artifactId>google-storage-noshade-wagon</artifactId>
-        <version>1.5</version>
+        <version>1.5.1</version>
     </extension>
 </extensions>
 ```
