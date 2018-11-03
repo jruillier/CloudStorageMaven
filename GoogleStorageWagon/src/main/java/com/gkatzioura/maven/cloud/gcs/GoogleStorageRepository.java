@@ -115,7 +115,11 @@ public class GoogleStorageRepository {
     private List<String> totalBlobs(Page<Blob> page) {
 
         List<String> blobs = new ArrayList<>();
-        page.getValues().forEach(bv->blobs.add(bv.getName()));
+
+        for (Blob bv : page.getValues()) {
+            blobs.add(bv.getName());
+        }
+
         if(page.hasNextPage()) {
             Page<Blob> newPage = storage.list(bucket,Storage.BlobListOption.pageToken(page.getNextPageToken()));
             blobs.addAll(totalBlobs(newPage));

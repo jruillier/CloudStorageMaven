@@ -3,16 +3,11 @@
     <parent>
         <artifactId>cloud-storage-maven</artifactId>
         <groupId>eu.aronnax.maven.cloud</groupId>
-        <version>1.6-SNAPSHOT</version>
+        <version>1.5.1-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>google-storage-noshade-wagon</artifactId>
-    <description>Google Cloud storage wagon without shading. Supports usage in .mvn/extensions.xml. Required for projects with a "parent" artifact.</description>
-
-    <properties>
-        <gcs.version>1.20.0</gcs.version>
-    </properties>
+    <artifactId>cloud-storage-core</artifactId>
 
     <licenses>
         <license>
@@ -24,35 +19,21 @@
 
     <dependencies>
         <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>jcl-over-slf4j</artifactId>
-            <version>${slf4j.version}</version>
-        </dependency>
-        <dependency>
             <groupId>org.apache.maven.wagon</groupId>
             <artifactId>wagon-provider-api</artifactId>
             <version>${wagon.version}</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
-            <groupId>com.google.cloud</groupId>
-            <artifactId>google-cloud-storage</artifactId>
-            <version>${gcs.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>eu.aronnax.maven.cloud</groupId>
-            <artifactId>cloud-storage-core</artifactId>
-            <version>1.5.1-SNAPSHOT</version>
-        </dependency>
-        <dependency>
-            <groupId>commons-io</groupId>
-            <artifactId>commons-io</artifactId>
-            <version>${commons-io.version}</version>
+            <groupId>org.slf4j</groupId>
+            <artifactId>jcl-over-slf4j</artifactId>
+            <version>${slf4j.version}</version>
+            <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-            <version>${junit.version}</version>
+            <version>4.12</version>
             <scope>test</scope>
         </dependency>
     </dependencies>
