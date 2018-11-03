@@ -3,7 +3,7 @@
     <parent>
         <artifactId>cloud-storage-maven</artifactId>
         <groupId>eu.aronnax.maven.cloud</groupId>
-        <version>1.5.1-SNAPSHOT</version>
+        <version>1.5.1</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
@@ -42,7 +42,7 @@
         <dependency>
             <groupId>eu.aronnax.maven.cloud</groupId>
             <artifactId>cloud-storage-core</artifactId>
-            <version>1.5.1-SNAPSHOT</version>
+            <version>1.5.1</version>
         </dependency>
         <dependency>
             <groupId>commons-io</groupId>
