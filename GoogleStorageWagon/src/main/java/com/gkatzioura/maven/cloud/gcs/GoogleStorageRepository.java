@@ -130,8 +130,12 @@ public class GoogleStorageRepository {
 
     public boolean exists(String resourceName) {
         final String key = resolveKey(resourceName);
-        Blob blob = storage.get(bucket, resourceName);
-        return blob.exists();
+        Blob blob = storage.get(bucket, key);
+        if(blob==null || !blob.exists()) {
+            LOGGER.warn("Blob {} doesn't exist in bucket {}", key, bucket);
+            return false;
+        }
+        return true;
     }
 
     public void disconnect() {
